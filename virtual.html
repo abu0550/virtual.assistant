@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nimbus Virtual Assistants | AI-Powered Support for Your Business</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar-custom">
+    <a href="#" class="logo">Nimbus<span>VA</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Services</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+    <div class="nav-actions" id="navActions">
+      <a href="#" class="btn-outline">Log In</a>
+      <a href="#" class="btn-filled">Book a Call</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="badge">AI-Powered Virtual Assistant Service</span>
+    <h1>Get Your Time Back with a Dedicated Virtual Assistant</h1>
+    <p>Nimbus pairs you with a trained virtual assistant backed by AI tools, so emails, scheduling, research, and admin work get done while you focus on growing your business.</p>
+    <div class="hero-buttons">
+      <a href="#pricing" class="btn-filled">Start Free Trial</a>
+      <a href="#how" class="btn-text">See how it works &rarr;</a>
+    </div>
+    <div class="hero-stats">
+      <div><strong>4,200+</strong><span>businesses served</span></div>
+      <div><strong>24/7</strong><span>assistant availability</span></div>
+      <div><strong>4.9/5</strong><span>average client rating</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card">
+      <div class="hero-card-row"><div class="dot dot-green"></div><p>Inbox cleared — 18 emails handled</p></div>
+      <div class="hero-card-row"><div class="dot dot-blue"></div><p>Meeting scheduled with 3 clients</p></div>
+      <div class="hero-card-row"><div class="dot dot-yellow"></div><p>Weekly report ready for review</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="section-heading">
+    <h2>What Your Assistant Handles</h2>
+    <p>One service, three ways we save you hours every week.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">📅</div>
+      <h3>Scheduling &amp; Admin</h3>
+      <p>Calendar management, meeting booking, and inbox organization so nothing important slips through.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🤖</div>
+      <h3>AI-Assisted Research</h3>
+      <p>Your assistant uses AI tools to pull market research, summarize documents, and prepare briefs in minutes.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💬</div>
+      <h3>Client Communication</h3>
+      <p>Timely replies to clients and customers, follow-ups, and support tickets handled on your behalf.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-bootstrap py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-12 col-md-4">
+        <h5 class="text-white mb-3">Nimbus<span class="text-info">VA</span></h5>
+        <p class="text-light small">AI-powered virtual assistant service helping small businesses and founders get hours back every week.</p>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-2">
+        <h6 class="text-white mb-3">Company</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#" class="link-light text-decoration-none">About</a></li>
+          <li class="mb-2"><a href="#" class="link-light text-decoration-none">Careers</a></li>
+          <li class="mb-2"><a href="#" class="link-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-2">
+        <h6 class="text-white mb-3">Service</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#" class="link-light text-decoration-none">Pricing</a></li>
+          <li class="mb-2"><a href="#" class="link-light text-decoration-none">How It Works</a></li>
+          <li class="mb-2"><a href="#" class="link-light text-decoration-none">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <h6 class="text-white mb-3">Stay Updated</h6>
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="Your email" aria-label="Email">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary mt-4 mb-3">
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-light">
+      <p class="mb-2 mb-md-0">&copy; 2026 Nimbus Virtual Assistants. All rights reserved.</p>
+      <div class="d-flex gap-3">
+        <a href="#" class="link-light text-decoration-none">Privacy</a>
+        <a href="#" class="link-light text-decoration-none">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const navActions = document.getElementById('navActions');
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    navActions.classList.toggle('open');
+    menuToggle.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
