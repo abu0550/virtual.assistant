@@ -1,0 +1,17 @@
+Applied change — .nav-links a:focus-visible,
+.btn-filled:focus-visible,
+.btn-outline:focus-visible,
+.btn-text:focus-visible,
+.menu-toggle:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+
+
+This uses :focus-visible (rather than plain :focus) so the outline only appears for keyboard users, not mouse clicks, keeping the visual design clean for most visitors. It reuses the existing --color-accent variable, so it stays consistent with the current color palette rather than introducing a new color, and it directly fixes a real accessibility gap without changing the page's layout or structure.
+
+
+
+
+
+

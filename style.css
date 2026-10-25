@@ -144,18 +144,6 @@ a {
   padding: 0.65rem 0;
 }
 
-/* Keyboard accessibility: visible focus outline for
-   keyboard users only (not mouse clicks) */
-.nav-links a:focus-visible,
-.btn-filled:focus-visible,
-.btn-outline:focus-visible,
-.btn-text:focus-visible,
-.menu-toggle:focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 3px;
-  border-radius: 6px;
-}
-
 .nav-links a:focus-visible,
 .btn-filled:focus-visible,
 .btn-outline:focus-visible,
